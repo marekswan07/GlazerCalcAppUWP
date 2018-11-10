@@ -8,7 +8,37 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
+    <Grid Background="#FFC5BEBE">
+        <TextBox x:Name="txtWidth" HorizontalAlignment="Left" Margin="329,89,0,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="Enter Value" KeyUp="txtWidth_KeyUp"/>
+        <TextBlock HorizontalAlignment="Left" Margin="251,95,0,0" Text="Width" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="251,142,0,0" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Margin="329,142,0,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="Enter Value" KeyUp="txtHeight_KeyUp"/>
+        <TextBlock x:Name="txtBlkTest" HorizontalAlignment="Center" Margin="0,37,0,0" Text="Hello, Welcome the Glazer App" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Visible" FocusVisualPrimaryBrush="#FF72B463" Foreground="#FF192CA2"/>
+        <ComboBox x:Name="combxTint" HorizontalAlignment="Left" Margin="329,193,0,0" VerticalAlignment="Top" Width="127" PlaceholderText="Pick a color">
+            <x:String>Blue</x:String>
+            <x:String>Brown</x:String>
+            <x:String>Black</x:String>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="261,199,0,0" Text="Tint" TextWrapping="Wrap" VerticalAlignment="Top" IsHitTestVisible="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="541,118,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="3.075,10.38" Width="60"/>
+        <TextBlock HorizontalAlignment="Left" Margin="515,157,0,0" Text="Quantity set:" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="3.075,10.38" Width="99"/>
+        <TextBlock x:Name="txtBlckQuan" HorizontalAlignment="Left" Margin="609,157,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="3.075,10.38" Width="60"/>
+        <Border BorderBrush="Black" HorizontalAlignment="Center" Height="11" Margin="0,320,0,0" VerticalAlignment="Top" Width="1004" RequestedTheme="Dark" BorderThickness="0,2,0,0"/>
+        <Slider x:Name="sidQuanity" HorizontalAlignment="Left" Margin="609,108,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.513,1" ValueChanged="sidQuanity_ValueChanged"/>
+        <Button x:Name="btnCalcQuote" Content="Calculate Quote" HorizontalAlignment="Left" Margin="502,251,0,0" VerticalAlignment="Top" Height="37" Width="135" IsEnabled="False" Click="btnCalcQuote_Click"/>
+        <TextBox x:Name="txtWidthQuote" HorizontalAlignment="Left" Margin="284,377,0,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="" KeyUp="txtWidth_KeyUp" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="231,383,0,0" Text="Width" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="377,383,0,0" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.511,0.23"/>
+        <TextBox x:Name="txtHeightQuote" HorizontalAlignment="Left" Margin="451,377,0,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="" KeyUp="txtHeight_KeyUp" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="557,383,0,0" Text="Tint" TextWrapping="Wrap" VerticalAlignment="Top" IsHitTestVisible="False"/>
+        <TextBox x:Name="txtTintQuote" HorizontalAlignment="Left" Margin="609,377,0,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="" KeyUp="txtHeight_KeyUp" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="705,383,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="3.075,10.38" Width="60"/>
+        <TextBox x:Name="txtQuantityQuote" HorizontalAlignment="Left" Margin="790,377,0,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="" KeyUp="txtHeight_KeyUp" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="329,451,0,0" Text="Length of Wood needed" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="3.075,10.38" Width="169"/>
+        <TextBlock HorizontalAlignment="Left" Margin="336,492,0,0" Text="Area of Glasses needed" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="3.075,10.38" Width="158"/>
+        <TextBox x:Name="txtLenOfWood" HorizontalAlignment="Left" Margin="525,445,0,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="" KeyUp="txtHeight_KeyUp" IsReadOnly="True"/>
+        <TextBox x:Name="txtAreaOfGlass" HorizontalAlignment="Left" Margin="525,486,0,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="" KeyUp="txtHeight_KeyUp" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="619,451,0,0" Text="Feet" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.511,0.23"/>
+        <TextBlock HorizontalAlignment="Left" Margin="619,492,0,0" Text="Square Meters" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.511,0.23"/>
     </Grid>
 </Page>

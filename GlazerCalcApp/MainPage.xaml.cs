@@ -133,6 +133,7 @@ namespace GlazerCalcApp
             double height = Convert.ToDouble(txtHeight.Text);
             double width = Convert.ToDouble(txtWidth.Text);
             int quanity = Convert.ToInt32(txtBlckQuan.Text);
+            DateTime currentDate = DateTime.Now;
 
             //calculates based on givin values
             double woodLength = (2 * (width + height) * 3.25) * quanity;
@@ -146,7 +147,7 @@ namespace GlazerCalcApp
             txtHeightQuote.Text = txtHeight.Text;
             txtQuantityQuote.Text = txtBlckQuan.Text;
             txtTintQuote.Text = combxTint.SelectedValue.ToString();
-            
+            txtblkDate.Text = currentDate.ToString();
 
         }
     }

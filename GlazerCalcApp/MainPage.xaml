@@ -40,5 +40,7 @@
         <TextBox x:Name="txtAreaOfGlass" HorizontalAlignment="Left" Margin="525,486,0,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="" KeyUp="txtHeight_KeyUp" IsReadOnly="True"/>
         <TextBlock HorizontalAlignment="Left" Margin="619,451,0,0" Text="Feet" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.511,0.23"/>
         <TextBlock HorizontalAlignment="Left" Margin="619,492,0,0" Text="Square Meters" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.511,0.23"/>
+        <TextBlock HorizontalAlignment="Left" Margin="406,537,0,0" Text="Today's Date" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="3.075,10.38" Width="86"/>
+        <TextBlock x:Name="txtblkDate" HorizontalAlignment="Left" Margin="529,537,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.511,0.23" Width="126"/>
     </Grid>
 </Page>
